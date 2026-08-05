@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    font-size: 16px;
+    font-family:"Montserrat",sans-serif;
+    color:rgba(0, 0, 0, .87);
+    line-height: 1.6;
+    margin: 0;
+    background-color: #FBFBFB;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+}
+.topbar{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    z-index: 3;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, .05);
+}
+.topbar nav{
+    float: left;
+    text-decoration: none;
+    font-weight:500;
+}
+.topbar nav a{
+    color: rgb(143, 138, 138);
+    padding: 0 53px;
+}
+.topbar nav a:hover, .topbar nav a.active{
+    color: #000;
+}
+.social{
+    float:right;
+}
+.social a{
+    padding: 0 12px;
+    opacity: 0.4;
+}
+.social a:hover{
+    opacity: 1;
+}
+.banner{
+    height: 427px;
+    background: url("banner.avif") no-repeat center center/ cover;
+}
+.main{
+    float:left;
+    background-color: #FFF;
+    width:calc(100% - 375px);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, .05);
+    z-index: 2;
+    position: relative;
+}
+.sidebar{
+    float:right;
+    background-color: #FBFBFB;
+    width: 375px;
+    padding: 40px;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.sidebar-title{
+    font-size: 30px;
+    color:black;
+    margin:15px 0;
+}
+
+.sidebar-title:first-child{
+    margin-top: 0;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 2.3;
+
+}
+.sidebar li{
+    padding: 6px 0;
+}
+
+.sidebar li:first-child{
+    padding-top: 0;
+}
+
+.sidebar li:last-child{
+    padding-bottom: 0;
+}
+
+.sidebar a{
+    color:gray;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border:1px solid #C4C4C4;
+    margin:50px 0;
+}
+
+.article{
+    position: relative;
+    margin: 50px;
+    padding-left: 333px;
+    min-height: 230px;
+}
+
+.article-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 308px;
+    height: 203px;
+    margin-right: 25px;
+}
+.article-img img{
+    width: 100%;
+    height: auto;
+}
+.article-date{
+    font-weight: 300;
+    color: rgba(0,0,0,.6);
+    margin-bottom: 5px;
+}
+
+.article a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.article a:hover{
+    text-decoration: underline;
+}
+
+.article-title{
+    font: size 2.25rem;
+    font-family: "cardo",serif;
+    margin: 0 0 15px 0;
+}
+.footer{
+    clear:both;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.article{
+    perspective: 100px;
+}
+.article-img{
+    transition: all 1s;
+}
+.article-img:hover{
+    transform: rotateY(60deg);
+    scale: 0.5;
+}
