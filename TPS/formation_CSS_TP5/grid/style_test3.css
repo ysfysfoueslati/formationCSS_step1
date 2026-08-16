@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background-color: #CCC;
+    border: solid 1px #999;
+}
+
+.grid{
+    display: grid;
+    grid-template: auto / repeat(12,1fr);
+}
+
+.col3{
+    grid-column-end: span 3;
+}
+.col2{
+    grid-column-end: span 2;
+}
+.col4{
+    grid-column-end: span 4;
+}

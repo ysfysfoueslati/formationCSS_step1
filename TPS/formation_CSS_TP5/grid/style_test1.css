@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid > div{
+    background-color: #CCC;
+    border: solid 1px #999;
+}
+.grid{
+    display: grid;
+    grid-template-columns:  repeat(2, 20%);
+    grid-template-rows: repeat(12, 1fr);
+}
+.child{
+    background-color: #999 !important;
+}
+.child2{
+    grid-column: 2 / span 1;
+    grid-row :1 / span 1;
+}
